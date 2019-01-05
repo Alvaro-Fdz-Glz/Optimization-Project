@@ -2,7 +2,7 @@
 param nuts := 4
 ;
 
-param mixes := 2
+param mixes := 3
 ;
 
 param cost :=
@@ -19,29 +19,37 @@ param allergies :=
 4 1
 ;
 
-param total_max_amount := 10
+param total_min_amount := 10
 ;
 
-param upper_bounds :	1	2:=
-1	0.5	1
-2	1	1
-3	1	1
-4	1	1
+param upper_bounds :	1	2	3:=
+1	0.5	1	1
+2	1	1	0.8
+3	1	1	0.2
+4	1	1	0.5
 ;
 
-param lower_bounds :	1	2:=
-1	0	0
-2	0.15	0.3
-3	0.1	0.2
-4	0	0.3
+param lower_bounds :	1	2	3:=
+1	0	0	0.1
+2	0.15	0.3	0
+3	0.1	0.2	0
+4	0	0.3	0
 ;
 
 param mixes_max_amount := 
 1 6
 2 6
+3 6
+;
+
+param mixes_min_amount :=
+1 1
+2 1
+3 1
 ;
 
 param max_allergy :=
 1 3
 2 3
+3 4
 ;
