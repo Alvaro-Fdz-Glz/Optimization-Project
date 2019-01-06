@@ -39,7 +39,7 @@ param lower_bounds :	1	2	3:=
 param mixes_max_amount := 
 1 6
 2 6
-3 5
+3 6
 ;
 
 param mixes_min_amount :=
